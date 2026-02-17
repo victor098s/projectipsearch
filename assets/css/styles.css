@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+  --font-family: "Space Grotesk", sans-serif;
+  --font-optical-sizing: auto;
+  --font-weight: <weight>;
+  --font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(#00002b, #100956, #211181);
+  font-family: var(--font-family);
+  font-optical-sizing: var(--font-optical-sizing);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+}
+.header {
+  background: transparent;
+  display: flex;
+  justify-content: end;
+  padding: 1rem;
+}
+.github {
+  width: 120px;
+  background: linear-gradient(70deg, #100956, #211181, #351dba, #321ab5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-shadow: 0px 15px 35px 0px rgb(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+}
+
+.alignDiv {
+  display: flex;
+  justify-content: center;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#search {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  height: 48px;
+  width: 280px;
+  text-align: center;
+}
+#submit {
+  width: 90px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #80ff00;
+  transition: 0.3s ease-in-out;
+}
+#submit:hover {
+  transform: translateY(-5px);
+}
+
+#sumbit:hover {
+  transform: translateY(-8px);
+  border: #80ff00;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  width: 500px;
+  height: 700px;
+  border-radius: 12px;
+  box-shadow: 0px 15px 35px 0px rgb(0, 0, 0, 0.3);
+}
+.alignResults {
+  display: flex;
+  justify-content: center;
+}
+
+.results {
+  display: none;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #e2e6fb;
+  padding: 2rem;
+  border-radius: 18px;
+  height: 400px;
+  width: 400px;
+  box-shadow: 0px 15px 35px 0px rgb(0, 0, 0, 0.3);
+}
+.results.active {
+  display: flex;
+}
+
+span {
+  color: #211181;
+}
