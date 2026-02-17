@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 90vh;
+  min-height: 100vh;
   background: linear-gradient(#00002b, #100956, #211181);
   font-family: var(--font-family);
   font-optical-sizing: var(--font-optical-sizing);
